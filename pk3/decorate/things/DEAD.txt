@@ -228,71 +228,74 @@ Death4:
 GIBD C 1
 GIBD C -1
 Stop    }}
-// Dead on a stick ---------------
 
-ACTOR DeadDeadStick: DeadStick Replaces DeadStick
+// Dead on a stick ---------------
+actor DeadDeadStick: DeadStick replaces DeadStick
 {
     Health 200
     Radius 16
     Height 64
-    +SOLID
-    +SHOOTABLE
-    +DONTTHRUST
     DropItem "HealthPlus" 55
     DropItem "HealthPlus" 55
     DropItem "ArmorShard" 55
     DropItem "ArmorShard" 55
     DropItem "Stimpack" 55
-    DropItem "Clips" 55
-    DropItem "Shells" 55
-    bloodtype "DeadBlood"
-    damagefactor "Fire", 0.0
+    DropItem "RifleAmmo" 55
+    DropItem "Shell" 55
+    BloodType "DeadBlood"
+    DamageFactor "Fire", 0.0
     GibHealth 10
+
+    +SOLID
+    +SHOOTABLE
+    +DONTTHRUST
+
     States
     {
-        Spawn:
-            TNT1 A 0
-        TNT1 A 0 A_SpawnItem("BdBloodSpot",0,0)
-        Goto Stand
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_SpawnItem("BdBloodSpot", 0, 0)
+        goto Stand
+
     Stand:
         POL1 A 60
-        
-        Loop
+        loop
+
     Death:
         TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_Scream
-        
         CAPT N -1
-        Stop
+        stop
     }
 }
 
 // Still alive on a stick --------------------------------------------------
-
-ACTOR DeadLiveStick: LiveStick Replaces LiveStick
+actor DeadLiveStick: LiveStick replaces LiveStick
 {
     Health 200
     Radius 16
     Height 64
     GibHealth 10
-    +SOLID
-    +DONTTHRUST
-    +SHOOTABLE
     DropItem "HealthPlus" 55
     DropItem "HealthPlus" 55
     DropItem "ArmorShard" 55
     DropItem "ArmorShard" 55
     DropItem "Stimpack" 55
-    DropItem "Clips" 55
-    DropItem "Shells" 55
-    damagefactor "Fire", 0.0
-    bloodtype "DeadBlood"
+    DropItem "RifleAmmo" 55
+    DropItem "Shell" 55
+    DamageFactor "Fire", 0.0
+    BloodType "DeadBlood"
+
+    +SOLID
+    +DONTTHRUST
+    +SHOOTABLE
+
     States
     {
     Spawn:
-            TNT1 A 0
-        TNT1 A 0 A_SpawnItem("BdBloodSpot",0,0)
-        Goto Stand
+        TNT1 A 0
+        TNT1 A 0 A_SpawnItem("BdBloodSpot", 0, 0)
+        goto Stand
+
     Stand:
         POL6 A 6
         POL6 B 8
@@ -302,13 +305,12 @@ ACTOR DeadLiveStick: LiveStick Replaces LiveStick
         POL6 B 8
         POL6 A 6
         POL6 B 8
-        Loop
+        loop
+
     Death:
         TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_Scream
-        
         CAPT N -1
-        Stop
+        stop
     }
 }
 
