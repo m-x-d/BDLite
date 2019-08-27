@@ -42,7 +42,7 @@ Chainsaw
 Base by Mike12, edited by Sergeant_Mark_IV
 
 Assault Rifle
-Mike12
+Mike12, edited by MaxED, ironsights sprites and brightmaps by MaxED
 
 Shotgun Pumping (SHTG*)
 DoomNukem
@@ -67,3 +67,13 @@ Base by Eriance, edited by Sergeant_Mark_IV
 
 BFG9000
 Sergeant_mark_IV
+
+-------
+GRAPHICS
+-------
+Rifle ironsights mussleflash: https://www.stickpng.com/img/nature/fire/muzzle-flash-front
+
+-------
+SOUNDS
+-------
+SOUNDS\Weapons\Rifle\rifle-dryfire.wav: made from https://freesound.org/people/fastson/sounds/399116/

@@ -69,7 +69,9 @@ $random weapons/chainsaw/hitwall { weapons/chainsaw/hitwall1 weapons/chainsaw/hi
 weapons/rifle/clip             "sounds/weapons/rifle/rifle-clip"
 weapons/rifle/reload         "sounds/weapons/rifle/rifle-reload"
 weapons/rifle/fire             "sounds/weapons/rifle/rifle-fire.ogg"
+weapons/rifle/dryfire        "sounds/weapons/rifle/rifle-dryfire.wav" //mxd
 $limit weapons/rifle/fire 0
+$pitchshift weapons/rifle/dryfire 0 //mxd
 
 weapons/shotgun/fire        "sounds/weapons/shotgun/shotgun-fire.ogg"
 weapons/shotgun/pump         "sounds/weapons/shotgun/shotgun-pump"

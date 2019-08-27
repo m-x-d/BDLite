@@ -1,0 +1,41 @@
+// Rifle
+brightmap sprite RIF1A0 { map "brightmaps/weapons/Rifle/RIF1A0.png" }
+brightmap sprite RIF1B0 { map "brightmaps/weapons/Rifle/RIF1B0.png" }
+brightmap sprite RIF1C0 { map "brightmaps/weapons/Rifle/RIF1B0.png" }
+brightmap sprite RIF1D0 { map "brightmaps/weapons/Rifle/RIF1B0.png" }
+
+brightmap sprite RIF2A0 { map "brightmaps/weapons/Rifle/RIF2A0.png" }
+brightmap sprite RIF2B0 { map "brightmaps/weapons/Rifle/RIF2B0.png" }
+brightmap sprite RIF2C0 { map "brightmaps/weapons/Rifle/RIF2B0.png" }
+brightmap sprite RIF2D0 { map "brightmaps/weapons/Rifle/RIF2B0.png" }
+
+brightmap sprite RIF3A0 { map "brightmaps/weapons/Rifle/RIF3A0.png" }
+brightmap sprite RIF3B0 { map "brightmaps/weapons/Rifle/RIF3B0.png" }
+brightmap sprite RIF3C0 { map "brightmaps/weapons/Rifle/RIF3B0.png" }
+brightmap sprite RIF3D0 { map "brightmaps/weapons/Rifle/RIF3B0.png" }
+
+brightmap sprite RIF4A0 { map "brightmaps/weapons/Rifle/RIF4A0.png" }
+brightmap sprite RIF4B0 { map "brightmaps/weapons/Rifle/RIF4B0.png" }
+brightmap sprite RIF4C0 { map "brightmaps/weapons/Rifle/RIF4B0.png" }
+brightmap sprite RIF4D0 { map "brightmaps/weapons/Rifle/RIF4B0.png" }
+
+// Rifle (iron sights)
+brightmap sprite RFZ1A0 { map "brightmaps/weapons/Rifle/RFZ1A0.png" }
+brightmap sprite RFZ1B0 { map "brightmaps/weapons/Rifle/RFZ1B0.png" }
+brightmap sprite RFZ1C0 { map "brightmaps/weapons/Rifle/RFZ1B0.png" }
+brightmap sprite RFZ1D0 { map "brightmaps/weapons/Rifle/RFZ1B0.png" }
+
+brightmap sprite RFZ2A0 { map "brightmaps/weapons/Rifle/RFZ2A0.png" }
+brightmap sprite RFZ2B0 { map "brightmaps/weapons/Rifle/RFZ2B0.png" }
+brightmap sprite RFZ2C0 { map "brightmaps/weapons/Rifle/RFZ2B0.png" }
+brightmap sprite RFZ2D0 { map "brightmaps/weapons/Rifle/RFZ2B0.png" }
+
+brightmap sprite RFZ3A0 { map "brightmaps/weapons/Rifle/RFZ3A0.png" }
+brightmap sprite RFZ3B0 { map "brightmaps/weapons/Rifle/RFZ3B0.png" }
+brightmap sprite RFZ3C0 { map "brightmaps/weapons/Rifle/RFZ3B0.png" }
+brightmap sprite RFZ3D0 { map "brightmaps/weapons/Rifle/RFZ3B0.png" }
+
+brightmap sprite RFZ4A0 { map "brightmaps/weapons/Rifle/RFZ4A0.png" }
+brightmap sprite RFZ4B0 { map "brightmaps/weapons/Rifle/RFZ4B0.png" }
+brightmap sprite RFZ4C0 { map "brightmaps/weapons/Rifle/RFZ4B0.png" }
+brightmap sprite RFZ4D0 { map "brightmaps/weapons/Rifle/RFZ4B0.png" }

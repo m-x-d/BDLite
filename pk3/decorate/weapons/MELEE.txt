@@ -15,15 +15,15 @@ ACTOR BdMeleeAttacks : BdLiteWeapon Replaces Fist
     States
     {
     Ready:
-        PUNS BCD 1 A_WeaponReady(WRF_ALLOWZOOM)
+        PUNS BCD 1 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         PUNS E 2 {
             A_PlaySound("weapons/melee/draw");
-            A_WeaponReady(WRF_ALLOWZOOM);
+            A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2);
         }
-        PUNS FGFE 2 A_WeaponReady(WRF_ALLOWZOOM)
-        PUNS DCB 1 A_WeaponReady(WRF_ALLOWZOOM)
+        PUNS FGFE 2 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
+        PUNS DCB 1 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
     ReadyLoop:
-        PUNG A 1 A_WeaponReady(WRF_ALLOWZOOM)
+        PUNG A 1 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         Goto ReadyLoop
     Deselect:
         TNT1 AAAAAAAAAAAAAAAAAA 0 A_Lower
@@ -38,7 +38,7 @@ ACTOR BdMeleeAttacks : BdLiteWeapon Replaces Fist
         TNT1 A 0 A_Giveinventory("Punching",1)
         TNT1 A 0 A_FireCustomMissile("MeleeStrike1", 0, 0, 0, -3)
         TNT1 A 0 A_GiveInventory("PSeq1", 1)
-        PUNG EFGHA 2 A_WeaponReady(1)
+        PUNG EFGHA 2 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         TNT1 A 0 A_TakeInventory("PSeq1", 2)
         Goto ReadyLoop
         
@@ -53,8 +53,8 @@ ACTOR BdMeleeAttacks : BdLiteWeapon Replaces Fist
         PUN2 D 4
         PUN2 EF 2
         TNT1 A 0 A_GiveInventory("PSeq2", 1)
-        PUN2 GH 2 A_WeaponReady(1)
-        PUNG A 8 A_WeaponReady(1)
+        PUN2 GH 2 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
+        PUNG A 8 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         TNT1 A 0 A_TakeInventory("PSeq1", 2)
         TNT1 A 0 A_TakeInventory("PSeq2", 1)
         Goto ReadyLoop
@@ -80,10 +80,10 @@ ACTOR BdMeleeAttacks : BdLiteWeapon Replaces Fist
         TNT1 A 0 A_Giveinventory("Punching",1)
         TNT1 A 0 A_FireCustomMissile("MeleeStrike1Smash", 0, 0, 0, -3)
         TNT1 A 0 A_GiveInventory("PSeq1", 1)
-        PUNG FGH 1 A_WeaponReady(1)
-        PUNG A 2 A_WeaponReady(1)
+        PUNG FGH 1 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
+        PUNG A 2 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         TNT1 A 0 A_TakeInventory("PSeq1", 2)
-        PUNG A 2 A_WeaponReady(1)
+        PUNG A 2 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         Goto ReadyLoop
         
     BerserkFire2:
@@ -94,11 +94,11 @@ ACTOR BdMeleeAttacks : BdLiteWeapon Replaces Fist
         TNT1 A 0 A_FireCustomMissile("MeleeStrike1Smash", 0, 0, 0, -3)
         TNT1 A 0 A_GiveInventory("PSeq2", 1)
         PUNF HI 1
-        PUN2 EFGH 1 A_WeaponReady(1)
-        PUNG A 2 A_WeaponReady(1)
+        PUN2 EFGH 1 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
+        PUNG A 2 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         TNT1 A 0 A_TakeInventory("PSeq1", 2)
         TNT1 A 0 A_TakeInventory("PSeq2", 1)
-        PUNG A 2 A_WeaponReady(1)
+        PUNG A 2 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         Goto ReadyLoop
 
     BerserkHook:

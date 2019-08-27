@@ -1,4 +1,3 @@
 [enu default]
-CNTRLMNU_ALTATTACK				= "Kick";
-CNTRLMNU_RELOAD					= "Weapon Reload";
-CNTRLMNU_ZOOM					= "Throw Grenade";
+CNTRLMNU_USER1 = "Kick";
+CNTRLMNU_USER2 = "Throw Grenade";

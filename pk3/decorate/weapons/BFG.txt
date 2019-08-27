@@ -18,7 +18,7 @@ ACTOR BdBFG : BdLiteWeapon Replaces BFG9000
 		BFGG A 1 Offset(-30, 65)
 		BFGG A 1 Offset(-15, 50)
     ReadyLoop:
-        BFGG A 4 A_WeaponReady(WRF_ALLOWZOOM)
+        BFGG A 4 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         Goto ReadyLoop
     Deselect:
 		BFGG A 1 Offset(-15, 50)

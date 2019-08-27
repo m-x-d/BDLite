@@ -1,3 +1,6 @@
+//mxd. Brightmap definitions
+#include brightmaps/weapons.bm
+
 pulselight EXPLOSIONFLASH
 {
     color 1.0 0.3 0.0

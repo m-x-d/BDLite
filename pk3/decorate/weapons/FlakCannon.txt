@@ -28,7 +28,7 @@ ACTOR FlakCannon : BdLiteWeapon
         FKGN AA 1
         FKGN AA 1
     ReadyLoop:
-        FKGN A 1 A_WeaponReady(WRF_ALLOWZOOM)
+        FKGN A 1 A_WeaponReady(WRF_ALLOWUSER1 | WRF_ALLOWUSER2)
         Goto ReadyLoop
         
     Deselect:
