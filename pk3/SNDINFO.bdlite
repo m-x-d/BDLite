@@ -65,6 +65,8 @@ weapons/chainsaw/hitwall2    "sounds/weapons/chainsaw/chainsaw-wall-2"
 weapons/chainsaw/hitwall3    "sounds/weapons/chainsaw/chainsaw-wall-3"
 weapons/chainsaw/hitwall4    "sounds/weapons/chainsaw/chainsaw-wall-4"
 $random weapons/chainsaw/hitwall { weapons/chainsaw/hitwall1 weapons/chainsaw/hitwall2 weapons/chainsaw/hitwall3 weapons/chainsaw/hitwall4 }
+$pitchshift weapons/chainsaw/loop 0 //mxd
+$pitchshift weapons/chainsaw/idle 0 //mxd
 
 weapons/rifle/clip             "sounds/weapons/rifle/rifle-clip"
 weapons/rifle/reload         "sounds/weapons/rifle/rifle-reload"
@@ -89,6 +91,7 @@ weapons/chaingun/spin        "sounds/weapons/chaingun/chaingun-spin"
 weapons/chaingun/stop        "sounds/weapons/chaingun/chaingun-stop"
 weapons/chaingun/start        "sounds/weapons/chaingun/chaingun-start"
 $limit weapons/chaingun/fire 0
+$pitchshift weapons/chaingun/spin 0 //mxd
 
 weapons/rocket/fly             "sounds/weapons/rocketlauncher/rocket-fly.ogg"
 weapons/rocket/draw            "sounds/weapons/rocketlauncher/rocket-draw"
