@@ -32,20 +32,22 @@ actor Doomer : PlayerPawn replaces DoomPlayer
 
     States
     {
-    DMSpawn:
-        TNT1 A 0 A_ChangeFlag("THRUSPECIES", 0)
-        TNT1 A 0 A_ChangeFlag("MTHRUSPECIES", 0)
-        TNT1 A 0 A_ChangeFlag("DONTHURTSPECIES", 0)
-        goto StandStill
-
     Spawn:
         TNT1 A 0 NoDelay SetPlayerProperty(0, 1, PROP_FROZEN)
         TNT1 A 0 A_Changeflag("NOPAIN", 1)
         MARN D 1
         MARN D 1 ACS_NamedExecute("ScreenPainClear", 0, 0, 0, 0)
-        TNT1 A 0 SetPlayerProperty(0, 0, PROP_FROZEN)
-        TNT1 A 0 A_Changeflag("NOPAIN", 0)
-        TNT1 A 0 ACS_NamedExecute("adjustForDeathmatch", 0, 0, 0, 0)
+        TNT1 A 0
+        {
+            SetPlayerProperty(0, 0, PROP_FROZEN);
+            A_Changeflag("NOPAIN", 0);
+            if (GameType() == 2) // GameType 2 is GAME_NET_DEATHMATCH
+            {
+                A_ChangeFlag("THRUSPECIES", 0);
+                A_ChangeFlag("MTHRUSPECIES", 0);
+                A_ChangeFlag("DONTHURTSPECIES", 0);
+            }
+        }
     StandStill:
         MARN DDDEEE 5 A_JumpIf(velz != 0, "IsJumpin")
         TNT1 A 0
