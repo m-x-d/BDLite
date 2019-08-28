@@ -1,14 +1,14 @@
 actor Doomer : PlayerPawn replaces DoomPlayer
 {
     Mass 100
-    player.viewheight 44
-    player.attackzoffset 16
+    Player.ViewHeight 44
+    Player.AttackZOffset 16
     GibHealth 20
     PainChance 255
     Species "Marines"
     BloodType "BdBleedPlayer"
-    damagefactor "Kick", 3.0
-    damagefactor "SuperKick", 5.0
+    DamageFactor "Kick", 3.0
+    DamageFactor "SuperKick", 5.0
     DamageFactor "CauseObjectsToSplash", 0.0
     Player.ColorRange 112, 127
     Player.StartItem "BdRifle"
