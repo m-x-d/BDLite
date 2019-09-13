@@ -72,9 +72,9 @@ actor BDRifle : BDLiteWeapon replaces Pistol
         
     ReadyLoopZoomed:
         //mxd. Pick a proper zoom sprite...
-        RFZ1 D 0 A_JumpIfInventory("RifleAmmoLoaded", 22, "ReadyLoop2")
-        RFZ2 D 0 A_JumpIfInventory("RifleAmmoLoaded", 12, "ReadyLoop2")
-        RFZ3 D 0 A_JumpIfInventory("RifleAmmoLoaded", 2,  "ReadyLoop2")
+        RFZ1 D 0 A_JumpIfInventory("RifleAmmoLoaded", 21, "ReadyLoop2")
+        RFZ2 D 0 A_JumpIfInventory("RifleAmmoLoaded", 11, "ReadyLoop2")
+        RFZ3 D 0 A_JumpIfInventory("RifleAmmoLoaded", 1,  "ReadyLoop2")
         RFZ4 D 0
     ReadyLoop2:
         "####" D 1 
